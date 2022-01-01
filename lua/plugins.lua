@@ -22,5 +22,12 @@ return require("packer").startup(
 			"neovim/nvim-lspconfig",
 			"williamboman/nvim-lsp-installer"
 		}
+
+		use {
+			"hrsh7th/cmp-nvim-lsp",
+			"hrsh7th/nvim-cmp",
+			"hrsh7th/vim-vsnip",
+			"hrsh7th/cmp-vsnip"
+		}
 	end
 )
