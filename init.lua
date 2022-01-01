@@ -1,9 +1,8 @@
 require("plugins")
 
 require("config.trim")
-require("config.onedark")
-require("config.nvim-lsp-installer")
 require("config.nvim-treesitter")
+require("config.onedark")
 require("config.nvim-tree")
 require("config.feline")
 

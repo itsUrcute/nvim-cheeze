@@ -7,11 +7,6 @@ return require("packer").startup(
 		use "navarasu/onedark.nvim"
 
 		use {
-			"neovim/nvim-lspconfig",
-			"williamboman/nvim-lsp-installer"
-		}
-
-		use {
 			"nvim-treesitter/nvim-treesitter",
 			run = ":TSUpdate"
 		}
