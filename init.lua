@@ -1,6 +1,7 @@
 require("plugins")
 
 require("config.onedark")
+require("config.nvim-treesitter")
 require("config.nvim-tree")
 require("config.feline")
 
@@ -17,7 +18,6 @@ vim.o.tabstop = 2
 vim.o.termguicolors = true
 vim.o.wrap = false
 
-vim.o.list = true
 vim.opt.listchars:append({
 	extends = "→",
 	lead = "·",

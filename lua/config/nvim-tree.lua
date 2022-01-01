@@ -26,7 +26,6 @@ vim.g.nvim_tree_icons = {
 
 require("nvim-tree").setup({
 	hijack_cursor = true,
-	update_cwd = true,
 	view = {
 		width = 30,
 		side = "left",
