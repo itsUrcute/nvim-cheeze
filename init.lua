@@ -1,14 +1,9 @@
 require("plugins")
 
-require("config.trim")
-require("config.nvim-treesitter")
-require("config.onedark")
-require("config.nvim-tree")
-require("config.feline")
-
 local map = require("utils").map
 
 vim.g.mapleader = " "
+vim.g.python_recommended_style = 0
 
 vim.o.cursorline = true
 vim.o.list = true
@@ -28,3 +23,10 @@ vim.opt.listchars:append({
 })
 
 map("<Leader>w", ":wincmd w<CR>")
+
+require("config.trim")
+require("config.onedark")
+require("config.nvim-treesitter")
+require("config.nvim-lsp-installer")
+require("config.nvim-tree")
+require("config.feline")

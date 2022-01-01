@@ -11,6 +11,11 @@ return require("packer").startup(
 			run = ":TSUpdate"
 		}
 
+		use {
+			"neovim/nvim-lspconfig",
+			"williamboman/nvim-lsp-installer"
+		}
+
 		use "kyazdani42/nvim-tree.lua"
 
 		use "feline-nvim/feline.nvim"

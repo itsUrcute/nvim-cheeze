@@ -24,6 +24,8 @@ vim.g.nvim_tree_icons = {
 	}
 }
 
+map("<C-n>", ":NvimTreeFocus<CR>")
+
 require("nvim-tree").setup({
 	hijack_cursor = true,
 	view = {
@@ -41,5 +43,3 @@ require("nvim-tree").setup({
 })
 
 require("nvim-tree.lib").toggle_ignored()
-
-map("<C-n>", ":NvimTreeFocus<CR>")
