@@ -1,0 +1,29 @@
+require("plugins")
+
+require("config.onedark")
+require("config.nvim-tree")
+require("config.feline")
+
+local map = require("utils").map
+
+vim.g.mapleader = " "
+
+vim.o.cursorline = true
+vim.o.list = true
+vim.o.mouse = "a"
+vim.o.number = true
+vim.o.shiftwidth = 2
+vim.o.tabstop = 2
+vim.o.termguicolors = true
+vim.o.wrap = false
+
+vim.o.list = true
+vim.opt.listchars:append({
+	extends = "→",
+	lead = "·",
+	precedes = "←",
+	tab = "│ ",
+	trail = "·"
+})
+
+map("<Leader>w", ":wincmd w<CR>")
