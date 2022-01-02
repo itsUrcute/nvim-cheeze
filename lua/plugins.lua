@@ -15,9 +15,7 @@ return require("packer").startup(
 
 		use {
 			"lewis6991/gitsigns.nvim",
-			requires = {
-				"nvim-lua/plenary.nvim"
-			}
+			requires = "nvim-lua/plenary.nvim"
 		}
 
 		use {
@@ -33,5 +31,7 @@ return require("packer").startup(
 		}
 
 		use "cappyzawa/trim.nvim"
+
+		use "tpope/vim-fugitive"
 	end
 )
