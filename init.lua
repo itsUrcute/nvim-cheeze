@@ -24,11 +24,12 @@ vim.opt.listchars:append({
 
 map("<Leader>w", ":wincmd w<CR>")
 
-require("config.trim")
 require("config.onedark")
-require("config.nvim-tree")
+
+require("config.cmp")
 require("config.feline")
 require("config.gitsigns")
+require("config.nvim-lsp")
+require("config.nvim-tree")
 require("config.nvim-treesitter")
-require("config.nvim-lsp-installer")
-require("config.cmp")
+require("config.trim")
