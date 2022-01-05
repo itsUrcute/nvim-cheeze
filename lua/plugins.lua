@@ -30,6 +30,11 @@ return require("packer").startup(
 			run = ":TSUpdate"
 		}
 
+		use {
+			"nvim-telescope/telescope.nvim",
+			requires = "nvim-lua/plenary.nvim"
+		}
+
 		use "cappyzawa/trim.nvim"
 
 		use "tpope/vim-fugitive"
