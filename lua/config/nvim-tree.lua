@@ -39,5 +39,3 @@ require("nvim-tree").setup({
 		}
 	}
 })
-
-require("nvim-tree.lib").toggle_ignored()

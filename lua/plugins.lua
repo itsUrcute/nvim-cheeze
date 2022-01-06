@@ -19,6 +19,11 @@ return require("packer").startup(
 		}
 
 		use {
+			"TimUntersberger/neogit",
+			requires = "nvim-lua/plenary.nvim"
+		}
+
+		use {
 			"neovim/nvim-lspconfig",
 			"williamboman/nvim-lsp-installer"
 		}
@@ -36,7 +41,5 @@ return require("packer").startup(
 		}
 
 		use "cappyzawa/trim.nvim"
-
-		use "tpope/vim-fugitive"
 	end
 )
