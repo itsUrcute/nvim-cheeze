@@ -3,3 +3,5 @@ require("onedark").setup({
 		comments = "none"
 	}
 })
+
+require("onedark").load()
