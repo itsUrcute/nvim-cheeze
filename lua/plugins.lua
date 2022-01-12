@@ -18,6 +18,8 @@ return require("packer").startup(
 			requires = "nvim-lua/plenary.nvim"
 		}
 
+		use "ray-x/lsp_signature.nvim"
+
 		use {
 			"TimUntersberger/neogit",
 			requires = "nvim-lua/plenary.nvim"

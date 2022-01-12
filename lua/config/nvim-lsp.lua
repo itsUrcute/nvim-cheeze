@@ -13,6 +13,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
 	}
 )
 
+map("<Leader>d", ":lua vim.diagnostic.open_float()<CR>")
 map("<Leader>h", ":lua vim.lsp.buf.hover()<CR>")
 
 require("nvim-lsp-installer").on_server_ready(
