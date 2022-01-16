@@ -18,6 +18,8 @@ return require("packer").startup(
 			requires = "nvim-lua/plenary.nvim"
 		}
 
+		use "jbyuki/instant.nvim"
+
 		use "ray-x/lsp_signature.nvim"
 
 		use {
