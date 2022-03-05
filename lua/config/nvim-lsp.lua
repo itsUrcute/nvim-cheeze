@@ -21,20 +21,9 @@ require("nvim-lsp-installer").on_server_ready(
 		local opts = {}
 		opts.capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
-		if server.name == "volar" then
+		if server.name == "eslint" then
 			opts = {
-				init_options = {
-					typescript = {
-						serverPath = path.concat({
-							settings._DEFAULT_SETTINGS.install_root_dir,
-							"tsserver",
-							"node_modules",
-							"typescript",
-							"lib",
-							"tsserverlibrary.js"
-						})
-					}
-				}
+				filetypes = { "javascript", "svelte" }
 			}
 		end
 

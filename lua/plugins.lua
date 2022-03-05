@@ -11,8 +11,6 @@ return require("packer").startup(
 			"hrsh7th/cmp-vsnip"
 		}
 
-		use "feline-nvim/feline.nvim"
-
 		use {
 			"lewis6991/gitsigns.nvim",
 			requires = "nvim-lua/plenary.nvim"
