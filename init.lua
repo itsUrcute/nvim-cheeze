@@ -28,6 +28,7 @@ map("<Leader>w", ":wincmd w<CR>")
 require("config.onedark")
 
 require("config.cmp")
+require("config.comment")
 require("config.gitsigns")
 require("config.lsp_signature")
 require("config.lualine")

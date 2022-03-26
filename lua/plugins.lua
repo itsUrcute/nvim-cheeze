@@ -11,6 +11,8 @@ return require("packer").startup(
 			"hrsh7th/cmp-vsnip"
 		}
 
+		use "numToStr/Comment.nvim"
+
 		use {
 			"lewis6991/gitsigns.nvim",
 			requires = "nvim-lua/plenary.nvim"
