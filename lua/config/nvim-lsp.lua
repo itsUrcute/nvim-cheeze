@@ -24,7 +24,7 @@ require("nvim-lsp-installer").on_server_ready(
 
 		if server.name == "eslint" then
 			opts = {
-				filetypes = { "javascript", "svelte" }
+				filetypes = { "javascript", "svelte", "vue" }
 			}
 		end
 
