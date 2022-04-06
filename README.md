@@ -6,4 +6,5 @@
 | `<Leader>gd` | git diff           |
 | `<Leader>gr` | git reset          |
 | `<Leader>h`  | show hover tooltip |
+| `<Leader>l`  | restart lsp        |
 | `<Leader>w`  | switch window      |
