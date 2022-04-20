@@ -3,6 +3,7 @@ local cmp = require("cmp")
 vim.opt.completeopt = "menu,menuone,noselect"
 
 cmp.setup({
+	mapping = cmp.mapping.preset.insert({}),
 	preselect = cmp.PreselectMode.None,
 	snippet = {
 		expand = function (args)
