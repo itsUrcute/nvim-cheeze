@@ -15,5 +15,8 @@ cmp.setup({
 		{ name = "vsnip" }
 	}, {
 		{ name = "buffer" }
-	})
+	}),
+	window = {
+		documentation = true
+	}
 })
