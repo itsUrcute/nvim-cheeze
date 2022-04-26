@@ -37,5 +37,10 @@ require("nvim-tree").setup({
 				{ key = "l", cb = tree_cb("cd") }
 			}
 		}
+	},
+	actions = {
+		open_file = {
+			resize_window = true
+		}
 	}
 })
