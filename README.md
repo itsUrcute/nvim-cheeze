@@ -1,4 +1,15 @@
+## Notice
+If you want to use my config, please run this command to install `packer.nvim` which is the plugin manager that this config uses.
+```bash
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
+
+Also, familiarise yourself with the documentation of `packer.nvim` to know how to add plugins, update plugins and remove plugins.
+
 ## Leader Key Mappings
+The leader key that this config uses is space. It can be changed in `init.lua` right under `vim.g.mapleader`.
+
 | Mapping      | Description        |
 | :-:          | -                  |
 | `<Leader>d`  | show diagnostic    |
