@@ -1,5 +1,4 @@
 local map = require("utils").map
-local path = require("nvim-lsp-installer.path")
 local settings = require("nvim-lsp-installer.settings")
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
