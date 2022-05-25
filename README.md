@@ -5,6 +5,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
 
+After that, run `:PackerSync` inside Neovim to install all the packages.
 Also, familiarise yourself with the documentation so you know how to add plugins, update plugins and remove plugins.
 
 ## Leader Key Mappings
