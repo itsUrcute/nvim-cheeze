@@ -1,28 +1,5 @@
 local tree_cb = require("nvim-tree.config").nvim_tree_callback
 
-vim.g.nvim_tree_git_hl = 1
-vim.g.nvim_tree_root_folder_modifier = ":t"
-vim.g.nvim_tree_special_files = {}
-
-vim.g.nvim_tree_show_icons = {
-	git = 0,
-	folders = 1,
-	files = 1,
-	folder_arrows = 0
-}
-
-vim.g.nvim_tree_icons = {
-	default = "",
-	folder = {
-		default = "+",
-		empty = "+",
-		empty_open = "-",
-		open = "-",
-		symlink = "+",
-		symlink_open = "-"
-	}
-}
-
 require("nvim-tree").setup({
 	open_on_setup = true,
 	hijack_cursor = true,
@@ -37,6 +14,30 @@ require("nvim-tree").setup({
 				{ key = "l", cb = tree_cb("cd") }
 			}
 		}
+	},
+	renderer = {
+		highlight_git = true,
+		root_folder_modifier = ":t",
+		icons = {
+			show = {
+				file = false,
+				folder = true,
+				folder_arrow = false,
+				git = false
+			},
+			glyphs = {
+				default = "",
+				folder = {
+					default = "+",
+					open = "-",
+					empty = "+",
+					empty_open = "-",
+					symlink = "+",
+					symlink_open = "-"
+				}
+			}
+		},
+		special_files = {}
 	},
 	actions = {
 		open_file = {
