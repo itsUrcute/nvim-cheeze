@@ -3,7 +3,10 @@ local cmp = require("cmp")
 vim.opt.completeopt = "menu,menuone,noselect"
 
 cmp.setup({
-	mapping = cmp.mapping.preset.insert({}),
+	mapping = cmp.mapping.preset.insert({
+		["<Tab>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
+		["<S-Tab>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert })
+	}),
 	preselect = cmp.PreselectMode.None,
 	snippet = {
 		expand = function (args)
