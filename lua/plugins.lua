@@ -14,6 +14,10 @@ return require("packer").startup(
 		use "numToStr/Comment.nvim"
 
 		use {
+			"nmac427/guess-indent.nvim"
+		}
+
+		use {
 			"lewis6991/gitsigns.nvim",
 			requires = "nvim-lua/plenary.nvim"
 		}
