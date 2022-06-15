@@ -13,6 +13,7 @@ The leader key that this config uses is space. It can be changed in `init.lua` r
 
 | Mapping      | Description        |
 | :-:          | -                  |
+| `<Leader>c`  | toggle comment     |
 | `<Leader>d`  | show diagnostic    |
 | `<Leader>gd` | git diff           |
 | `<Leader>gr` | git reset          |
