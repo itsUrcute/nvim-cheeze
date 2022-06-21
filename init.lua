@@ -4,6 +4,7 @@ local map = require("utils").map
 
 vim.g.mapleader = " "
 vim.g.python_recommended_style = 0
+vim.g.rust_recommended_style = 0
 
 vim.o.cursorline = true
 vim.o.list = true
