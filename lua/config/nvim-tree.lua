@@ -2,6 +2,8 @@ local tree_cb = require("nvim-tree.config").nvim_tree_callback
 
 require("nvim-tree").setup({
 	open_on_setup = true,
+	open_on_setup_file = true,
+	ignore_buffer_on_setup = true,
 	hijack_cursor = true,
 	view = {
 		width = 30,
@@ -45,3 +47,5 @@ require("nvim-tree").setup({
 		}
 	}
 })
+
+-- require("nvim-tree").toggle(false, true)

@@ -1,4 +1,54 @@
-require("plugins")
+require("packer").startup(
+	function ()
+		use "wbthomason/packer.nvim"
+
+		use "navarasu/onedark.nvim"
+
+		use {
+			"hrsh7th/cmp-nvim-lsp",
+			"hrsh7th/nvim-cmp",
+			"L3MON4D3/LuaSnip",
+			"saadparwaiz1/cmp_luasnip"
+		}
+
+		use "numToStr/Comment.nvim"
+
+		use {
+			"nmac427/guess-indent.nvim"
+		}
+
+		use {
+			"lewis6991/gitsigns.nvim",
+			requires = "nvim-lua/plenary.nvim"
+		}
+
+		use "nvim-lualine/lualine.nvim"
+
+		use "ray-x/lsp_signature.nvim"
+
+		use {
+			"neovim/nvim-lspconfig",
+			"williamboman/nvim-lsp-installer"
+		}
+
+		use "kyazdani42/nvim-tree.lua"
+
+		use {
+			"nvim-treesitter/nvim-treesitter"
+		}
+
+		use {
+			"nvim-telescope/telescope.nvim",
+			requires = "nvim-lua/plenary.nvim"
+		}
+
+		use "cappyzawa/trim.nvim"
+
+		vim.cmd "autocmd User PackerComplete ++once lua require('plugins')"
+
+		require("packer").sync()
+	end
+)
 
 local map = require("utils").map
 
@@ -24,17 +74,3 @@ vim.opt.listchars:append({
 })
 
 map("<Leader>w", ":wincmd w<CR>")
-
-require("config.onedark")
-
-require("config.cmp")
-require("config.comment")
-require("config.gitsigns")
-require("config.guess-indent")
--- require("config.lsp_signature")
-require("config.lualine")
-require("config.nvim-lsp")
-require("config.nvim-tree")
-require("config.nvim-treesitter")
-require("config.telescope")
-require("config.trim")
