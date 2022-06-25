@@ -1,12 +1,17 @@
-## Notice
-If you want to use my config, please run this command to install [`packer.nvim`](https://github.com/wbthomason/packer.nvim) which is the plugin manager that this config uses.
-```bash
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-```
+## Prerequisites
+- Neovim
+- Git
+- A C compiler (e.g., `gcc`)
 
-After that, run `:PackerSync` inside Neovim to install all the packages.
-Also, familiarise yourself with the documentation so you know how to add plugins, update plugins and remove plugins.
+## Install
+This will clone this repository as well as [packer.nvim](https://github.com/wbthomason/packer.nvim) which is the plugin manager this config uses.
+```bash
+git clone --depth 1 https://github.com/cheeze2000/nvim ~/.config/nvim
+
+git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
+Afterwards, launch Neovim and wait while `nvim-treesitter` is being installed.
+When it is done, restart Neovim to enjoy syntax highlighting.
 
 ## Leader Key Mappings
 The leader key that this config uses is space. It can be changed in `init.lua` right under `vim.g.mapleader`.
