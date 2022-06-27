@@ -30,7 +30,7 @@ The leader key that this config uses is <kbd>Space</kbd>. It can be changed in `
 | `<Leader>w`  | switch window      |
 
 ## Mini Guide
-1. Whenever Neovim is launched, the packages are updated automatically. Dismiss the window with `q` afterwards
+1. Whenever Neovim is launched, the packages are updated automatically. Dismiss the window with <kbd>q</kbd> afterwards
 1. Assuming the leader key is still <kbd>Space</kbd>, focus the cursor on the file tree with <kbd>Space</kbd> + <kbd>W</kbd>
 1. Navigate through the file tree like how you normally navigate in Neovim (<kbd>h</kbd>, <kbd>j</kbd>, <kbd>k</kbd>, <kbd>l</kbd>)
 1. Open folders and files with <kbd>Tab</kbd> or <kbd>Enter</kbd>
