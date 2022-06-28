@@ -1,3 +1,4 @@
+local onedark_dir = vim.fn.stdpath("data") .. "/site/pack/packer/start/onedark.nvim"
 local treesitter_dir = vim.fn.stdpath("data") .. "/site/pack/packer/start/nvim-treesitter"
 
 require("packer").startup(
@@ -54,6 +55,10 @@ require("packer").startup(
 		use "cappyzawa/trim.nvim"
 
 		vim.cmd "autocmd User PackerComplete ++once lua require('plugins')"
+
+		if vim.fn.isdirectory(onedark_dir) == 1 then
+			require("config.onedark")
+		end
 
 		require("packer").sync()
 	end
