@@ -14,19 +14,19 @@ Upon running the commands, launch Neovim and wait while [`nvim-treesitter`](http
 When it is done, restart Neovim to enjoy syntax highlighting.
 
 ## Leader Key Mappings
-The leader key that this config uses is <kbd>Space</kbd>. It can be changed in `init.lua` right under `vim.g.mapleader`.
+The leader key that this config uses is <kbd>Space</kbd>.
 
-| Mapping      | Description        |
-| :-:          | -                  |
-| `<Leader>c`  | toggle comment     |
-| `<Leader>d`  | show diagnostic    |
-| `<Leader>gd` | git diff           |
-| `<Leader>gr` | git reset          |
-| `<Leader>h`  | show hover tooltip |
-| `<Leader>l`  | restart lsp        |
-| `<Leader>tf` | go to file         |
-| `<Leader>tl` | find in files      |
-| `<Leader>w`  | switch window      |
+| Mapping                          | Description        |
+| :-:                              | -                  |
+| <kbd>Space</kbd> + <kbd>c</kbd>  | toggle comment     |
+| <kbd>Space</kbd> + <kbd>d</kbd>  | show diagnostic    |
+| <kbd>Space</kbd> + <kbd>gd</kbd> | git diff           |
+| <kbd>Space</kbd> + <kbd>gr</kbd> | git reset          |
+| <kbd>Space</kbd> + <kbd>h</kbd>  | show hover tooltip |
+| <kbd>Space</kbd> + <kbd>l</kbd>  | restart lsp        |
+| <kbd>Space</kbd> + <kbd>tf</kbd> | go to file         |
+| <kbd>Space</kbd> + <kbd>tl</kbd> | find in files      |
+| <kbd>Space</kbd> + <kbd>w</kbd>  | switch window      |
 
 ## Mini Guide
 1. Whenever Neovim is launched, the packages are updated automatically. Dismiss the window with <kbd>q</kbd> afterwards
