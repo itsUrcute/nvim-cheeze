@@ -1,3 +1,5 @@
+local treesitter_dir = vim.fn.stdpath("data") .. "/site/pack/packer/start/nvim-treesitter"
+
 require("packer").startup(
 	function ()
 		use "wbthomason/packer.nvim"
@@ -33,9 +35,16 @@ require("packer").startup(
 
 		use "kyazdani42/nvim-tree.lua"
 
-		use {
-			"nvim-treesitter/nvim-treesitter"
-		}
+		if vim.fn.isdirectory(treesitter_dir) == 0 then
+			use {
+				"nvim-treesitter/nvim-treesitter"
+			}
+		else
+			use {
+				"nvim-treesitter/nvim-treesitter",
+				run = ":TSUpdate"
+			}
+		end
 
 		use {
 			"nvim-telescope/telescope.nvim",

@@ -12,7 +12,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvi
 ```
 Upon running the commands, launch Neovim and wait while [`nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter) is being installed.
 When it is done, restart Neovim to enjoy syntax highlighting.
-Occasionally, update the parsers with `:TSUpdate`.
 
 ## Leader Key Mappings
 The leader key that this config uses is <kbd>Space</kbd>. It can be changed in `init.lua` right under `vim.g.mapleader`.
