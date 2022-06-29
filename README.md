@@ -28,11 +28,13 @@ The leader key that this config uses is <kbd>Space</kbd>.
 | <kbd>Space</kbd> + <kbd>tl</kbd> | find in files      |
 | <kbd>Space</kbd> + <kbd>w</kbd>  | switch window      |
 
+If you want to use "find in files", install the dependencies shown [here](https://github.com/nvim-telescope/telescope.nvim#suggested-dependencies).
+
 ## Mini Guide
 1. Whenever Neovim is launched, the packages are updated automatically so expect breaking changes to happen
-1. Assuming the leader key is still <kbd>Space</kbd>, focus the cursor on the file tree with <kbd>Space</kbd> + <kbd>W</kbd>
 1. Navigate through the file tree like how you normally navigate in Neovim (<kbd>h</kbd>, <kbd>j</kbd>, <kbd>k</kbd>, <kbd>l</kbd>)
 1. Open folders and files with <kbd>Tab</kbd> or <kbd>Enter</kbd>
 1. After opening a file, install any available LSP servers with `:LspInstallInfo`
 1. Verify if the servers are launched properly with `:LspInfo`
+1. Focus the cursor on the file tree with <kbd>Space</kbd> + <kbd>W</kbd> to edit another file
 1. Have fun with Neovim
