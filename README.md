@@ -7,10 +7,9 @@
 This will clone this repository as well as [`packer.nvim`](https://github.com/wbthomason/packer.nvim) which is the plugin manager this config uses.
 ```bash
 git clone --depth 1 https://github.com/cheeze2000/nvim ~/.config/nvim
-
 git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
-Upon running the commands, launch Neovim and wait while [`nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter) is being installed.
+Upon running the commands, launch Neovim and wait 1-2 minutes while [`nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter) is being installed.
 When it is done, restart Neovim to enjoy syntax highlighting.
 
 ## Leader Key Mappings
@@ -29,7 +28,7 @@ The leader key that this config uses is <kbd>Space</kbd>.
 | <kbd>Space</kbd> + <kbd>w</kbd>  | switch window      |
 
 ## Mini Guide
-1. Whenever Neovim is launched, the packages are updated automatically. Dismiss the window with <kbd>q</kbd> afterwards
+1. Whenever Neovim is launched, the packages are updated automatically so expect breaking changes to happen
 1. Assuming the leader key is still <kbd>Space</kbd>, focus the cursor on the file tree with <kbd>Space</kbd> + <kbd>W</kbd>
 1. Navigate through the file tree like how you normally navigate in Neovim (<kbd>h</kbd>, <kbd>j</kbd>, <kbd>k</kbd>, <kbd>l</kbd>)
 1. Open folders and files with <kbd>Tab</kbd> or <kbd>Enter</kbd>
