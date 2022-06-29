@@ -1,6 +1,8 @@
 local map = require("utils").map
 local map_visual = require("utils").map_visual
 
+vim.g.mapleader = " "
+
 map("<Leader>w", ":wincmd w<CR>")
 
 map("<Leader>c", ":lua require('Comment.api').toggle_current_linewise()<CR>")

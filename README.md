@@ -13,6 +13,7 @@ Upon running the commands, launch Neovim and wait 1-2 minutes while [`nvim-trees
 When it is done, restart Neovim to enjoy syntax highlighting.
 
 ## Leader Key Mappings
+These mappings can be configured in [`lua/mappings.lua`](lua/mappings.lua).
 The leader key that this config uses is <kbd>Space</kbd>.
 
 | Mapping                          | Description        |

@@ -1,6 +1,5 @@
 local treesitter_dir = vim.fn.stdpath("data") .. "/site/pack/packer/start/nvim-treesitter"
 
-vim.g.mapleader = " "
 vim.g.python_recommended_style = 0
 
 vim.o.cursorline = true
