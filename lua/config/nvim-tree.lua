@@ -47,5 +47,3 @@ require("nvim-tree").setup({
 		}
 	}
 })
-
--- require("nvim-tree").toggle(false, true)

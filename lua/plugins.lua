@@ -1,5 +1,6 @@
 require("config.onedark")
 
+require("config.bufferline")
 require("config.cmp")
 require("config.comment")
 require("config.gitsigns")

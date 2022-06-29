@@ -1,11 +1,21 @@
-local onedark_dir = vim.fn.stdpath("data") .. "/site/pack/packer/start/onedark.nvim"
 local treesitter_dir = vim.fn.stdpath("data") .. "/site/pack/packer/start/nvim-treesitter"
+
+require("packer").init({
+	display = {
+		non_interactive = true
+	}
+})
 
 require("packer").startup(
 	function ()
 		use "wbthomason/packer.nvim"
 
 		use "navarasu/onedark.nvim"
+
+		use {
+			"akinsho/bufferline.nvim",
+			tag = "v2.*"
+		}
 
 		use {
 			"hrsh7th/cmp-nvim-lsp",
@@ -16,9 +26,7 @@ require("packer").startup(
 
 		use "numToStr/Comment.nvim"
 
-		use {
-			"nmac427/guess-indent.nvim"
-		}
+		use "nmac427/guess-indent.nvim"
 
 		use {
 			"lewis6991/gitsigns.nvim",
@@ -36,17 +44,6 @@ require("packer").startup(
 
 		use "kyazdani42/nvim-tree.lua"
 
-		if vim.fn.isdirectory(treesitter_dir) == 0 then
-			use {
-				"nvim-treesitter/nvim-treesitter"
-			}
-		else
-			use {
-				"nvim-treesitter/nvim-treesitter",
-				run = ":TSUpdate"
-			}
-		end
-
 		use {
 			"nvim-telescope/telescope.nvim",
 			requires = "nvim-lua/plenary.nvim"
@@ -54,10 +51,19 @@ require("packer").startup(
 
 		use "cappyzawa/trim.nvim"
 
-		vim.cmd "autocmd User PackerComplete ++once lua require('plugins')"
+		if vim.fn.isdirectory(treesitter_dir) == 1 then
+			use {
+				"nvim-treesitter/nvim-treesitter",
+				run = ":TSUpdate"
+			}
 
-		if vim.fn.isdirectory(onedark_dir) == 1 then
-			require("config.onedark")
+			require("plugins")
+		else
+			use {
+				"nvim-treesitter/nvim-treesitter"
+			}
+
+			vim.cmd "autocmd User PackerComplete ++once lua require('plugins')"
 		end
 
 		require("packer").sync()
