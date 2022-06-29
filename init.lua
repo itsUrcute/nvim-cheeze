@@ -25,7 +25,7 @@ require("mappings")
 require("packer").init({
 	display = {
 		non_interactive = true
-	},
+	}
 })
 
 require("packer").startup(
