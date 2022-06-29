@@ -58,6 +58,8 @@ require("packer").startup(
 			}
 
 			require("plugins")
+
+			vim.cmd "autocmd User PackerComplete ++once lua print('All packages are up-to-date!')"
 		else
 			use {
 				"nvim-treesitter/nvim-treesitter"
