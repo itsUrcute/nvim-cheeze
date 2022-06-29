@@ -1,6 +1,3 @@
-local map = require("utils").map
-local settings = require("nvim-lsp-installer.settings")
-
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
 	vim.lsp.diagnostic.on_publish_diagnostics, {
 		virtual_text = {
@@ -11,10 +8,6 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
 		}
 	}
 )
-
-map("<Leader>d", ":lua vim.diagnostic.open_float()<CR>")
-map("<Leader>h", ":lua vim.lsp.buf.hover()<CR>")
-map("<Leader>l", ":LspRestart<CR>")
 
 require("nvim-lsp-installer").on_server_ready(
 	function (server)
