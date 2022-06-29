@@ -35,11 +35,6 @@ require("packer").startup(
 		use "navarasu/onedark.nvim"
 
 		use {
-			"akinsho/bufferline.nvim",
-			tag = "v2.*"
-		}
-
-		use {
 			"hrsh7th/cmp-nvim-lsp",
 			"hrsh7th/nvim-cmp",
 			"L3MON4D3/LuaSnip",
