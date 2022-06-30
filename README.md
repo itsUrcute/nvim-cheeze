@@ -34,7 +34,8 @@ If you want to use "find in files", install the dependencies shown [here](https:
 1. Whenever Neovim is launched, the packages are updated automatically so expect breaking changes to happen
 1. Navigate through the file tree like how you normally navigate in Neovim (<kbd>h</kbd>, <kbd>j</kbd>, <kbd>k</kbd>, <kbd>l</kbd>)
 1. Open folders and files with <kbd>Tab</kbd> or <kbd>Enter</kbd>
-1. After opening a file, install any available LSP servers with `:LspInstallInfo`
+1. To configure LSP, consult [`server_configurations.md`](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)
+1. Enable (or disable) LSP server(s) by modifying [`lua/config/nvim-lsp.lua`](lua/config/nvim-lsp.lua)
 1. Verify if the servers are launched properly with `:LspInfo`
 1. Focus the cursor on the file tree with <kbd>Space</kbd> + <kbd>W</kbd> to edit another file
 1. Have fun with Neovim
