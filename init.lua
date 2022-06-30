@@ -52,8 +52,6 @@ require("packer").startup(
 
 		use "nvim-lualine/lualine.nvim"
 
-		use "ray-x/lsp_signature.nvim"
-
 		use {
 			"neovim/nvim-lspconfig",
 			"williamboman/nvim-lsp-installer"
