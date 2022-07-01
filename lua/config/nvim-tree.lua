@@ -18,10 +18,7 @@ require("nvim-tree").setup({
 		highlight_git = true,
 		root_folder_modifier = ":t",
 		indent_markers = {
-			enable = true,
-			icons = {
-				corner = "│ "
-			}
+			enable = true
 		},
 		icons = {
 			show = {
