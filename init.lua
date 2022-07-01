@@ -52,7 +52,10 @@ require("packer").startup(
 
 		use "nvim-lualine/lualine.nvim"
 
-		use "neovim/nvim-lspconfig"
+		use {
+			"williamboman/nvim-lsp-installer",
+			"neovim/nvim-lspconfig"
+		}
 
 		use "kyazdani42/nvim-tree.lua"
 
